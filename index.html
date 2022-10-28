@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Holder Suite - MarketViewer/TradingView</title>
+
+  <meta name="title" content="Pooupe">
+  <meta name="description" content="Pooupe Finanças, todos os direitos reservados. Listagem, cadastro, edição e remoção de transações, atualização dos valores de entrada, saída e total em tempo real, filtragem e ordenação das transações e download das informações em PDF.">
+  <meta name="keywords" content="HTML, HTML5, CSS, CSS3, JavaScript, JS, Web, Dev, Finances, Finanças,Rocketseat, MaratonaDiscover, site">
+  <meta name="author" content="Luís Carlos C. Júnior">
+  <meta name="theme-color" content="#00000">
+
+  <link rel="shortcut icon" href="assets/logo.png" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,400;0,700;1,100;1,400;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css">
+
+  <style> 
+
+    
+h1 {
+     color: white;
+}
+
+h5 {
+     color: white;
+}
+
+h2 {
+     color: black;
+}
+
+p  {
+     color: white;
+}
+a  {
+     color: lightblue;
+}
+
+div.cotações {
+              text-align: center;
+}
+
+.cotação {
+           color: black;
+}
+
+div.tradingviewlogo {
+              text-align: center;
+}
+
+h1 {
+  animation-duration: 2s;
+  animation-name: slidein;
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 0%;
+    width: 300%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+
+p {
+  animation-duration: 4s;
+  animation-name: slidein;
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 0%;
+    width: 300%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+
+.myButton {
+  box-shadow: -5px 14px 36px -6px #dbdbdb;
+  background:linear-gradient(to bottom, #dbdbdb 5%, #dbdbdb 100%);
+  border-radius:2px;
+  border:1 px solid #007a0a;
+  color:#000000;
+  font-family:Arial;
+  font-size:18 px;
+  font-weight:bold;
+  padding:16px 590px;
+  text-decoration:none;
+}
+
+
+  </style>
+
+</head>
+
+<body>
+
+  <header>
+    <h1>Holder Suite - MarketViewer/TradingView</h1>
+    <p>(Página institucional:
+<a href="https://luiscarloscjr.github.io/HolderSuite/" title="Acesse a página institucional da Holder Suite!"> Clique aqui!)</a>
+    </p>
+
+  </header>
+  
+  <p>⠀⠀⠀⠀⠀⠀⠀⠀</p>
+  <p>⠀⠀⠀⠀⠀⠀⠀⠀</p>
+  <p>⠀⠀⠀⠀⠀⠀⠀⠀</p>
+
+<!-- TradingView Widget BEGIN -->
+<div class="tradingview-widget-container">
+  <div id="tradingview_f6d66"></div>
+  <div class="tradingview-widget-copyright"><a href="https://br.tradingview.com/symbols/NASDAQ-AAPL/" rel="noopener" target="_blank"><span class="blue-text">Gráfico de ações</span></a> Holder Suite - MarketViewer / TradingView</div>
+  <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
+  <script type="text/javascript">
+  new TradingView.widget(
+  {
+  "width": 500,
+  "height": 500,
+  "symbol": "NASDAQ:AAPL",
+  "interval": "1",
+  "timezone": "Etc/UTC",
+  "theme": "dark",
+  "style": "0",
+  "locale": "br",
+  "toolbar_bg": "#f1f3f6",
+  "enable_publishing": false,
+  "hide_legend": true,
+  "allow_symbol_change": true,
+  "container_id": "tradingview_f6d66"
+}
+  );
+  </script>
+</div>
+<!-- TradingView Widget END -->
+
+
+<p>⠀⠀⠀⠀⠀⠀⠀⠀</p>
+
+  <footer>
+    <p>⠀⠀⠀⠀⠀⠀⠀⠀</p>
+    <p>Holder Suite (Bolsa de valores em tempo real)</p> 
+    <p>⠀⠀⠀⠀⠀⠀⠀⠀</p>
+    <p>Fundador: Luís Carlos C. Júnior</p>
+    <p>⠀⠀⠀⠀⠀⠀⠀⠀</p>
+     <a>Todos os direitos reservados.</a> 
+<p>⠀⠀⠀⠀⠀⠀⠀⠀</p>
+
+  
+
+<p>⠀⠀⠀⠀⠀⠀⠀⠀</p>
+<p>⠀⠀⠀⠀⠀⠀⠀⠀</p>
+
+
+  </footer>
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.4.1/jspdf.debug.js" integrity="sha384-THVO/sM0mFD9h7dfSndI6TS0PgAGavwKvB5hAxRRvc0o9cPLohB0wb/PTA7LdUHs" crossorigin="anonymous"></script>
+  <script src="./scripts.js"></script>
+
+</body>
+
+</html>
